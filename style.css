@@ -1,0 +1,224 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset sections for navbar */
+section {
+  padding-top: 80px;
+}
+
+/* ========================
+   Global Styles
+======================== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ========================
+   Navbar
+======================== */
+.navbar {
+  padding: 1rem 2rem;
+  background-color: #f8f9fa !important; /* Light background */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2c3e50 !important;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 1rem;
+  color: #2c3e50 !important;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff !important; /* Bootstrap primary color */
+}
+
+/* ========================
+   Hero Section
+======================== */
+/* section#home {
+  background: url('samutet church.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+    min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+section#home {
+  background: url('samutet church.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  min-height: 60vh; /* ensures hero takes part of screen but not too tall */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px; /* reduce excess padding */
+  position: relative;
+  z-index: 1; /* keep hero content above overlay */
+}
+
+section#home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  z-index: -1; /* send overlay behind hero content */
+}
+
+
+section#home .container {
+  position: relative;
+  z-index: 1;
+}
+
+section#home h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+section#home p.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+section#home .btn {
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+}
+
+
+/* ========================
+   About Section
+======================== */
+section#about {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+}
+
+section#about h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+section#about p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  color: #555;
+}
+
+section#about .col-md-4 {
+  margin-bottom: 2rem;
+}
+
+section#about .p-4 {
+  background-color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section#about .p-4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ========================
+   Services Section
+======================== */
+section#services {
+  padding: 80px 20px;
+}
+
+section#services h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.service-card {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.service-card h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.service-card p {
+  color: #555;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ========================
+   Footer
+======================== */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #007bff;
+}
+
+/* ========================
+   Responsive Adjustments
+======================== */
+@media (max-width: 768px) {
+  section#home h1 {
+    font-size: 2.2rem;
+  }
+
+  section#home p.lead {
+    font-size: 1rem;
+  }
+
+  section#about h2, section#services h2 {
+    font-size: 2rem;
+  }
+}
