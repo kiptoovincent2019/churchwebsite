@@ -4,11 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AIC SAMUTET CHURCH</title>
-
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in milliseconds
+    once: true       // animate only once when scrolling down
+  });
+</script>
+
 </head>
 <body>
 
@@ -16,14 +22,15 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">AIC Samutet Church</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#choir">Choir</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -35,7 +42,7 @@
     <div class="container">
       <h1 class="display-4 fw-bold">AIC SAMUTET CHURCH</h1>
       <p class="lead">A sanctuary of faith, a family of fellowship, and a home for community.</p>
-      <a href="#services" class="btn btn-light btn-lg mt-3">Join Our Services</a>
+      <a href="#services" class="btn btn-outline-light btn-lg mt-3">Join Our Services</a>
     </div>
   </section>
 
@@ -122,12 +129,52 @@
     </div>
   </section> -->
 
+  <!-- Choir Songs Section -->
+<!-- <section id="choir" class="py-5">
+  <div class="container">
+    <h2 class="fw-bold mb-4">🎶 Choir Songs 🎵</h2>
+    <p class="text-center mb-5">
+      Enjoy our choir performances and spiritual songs on our YouTube channel! 🙏✨
+    </p>
+    <div class="text-center">
+      <a href="http://www.youtube.com/@maurinechepkemoi2792" target="_blank" class="btn btn-primary btn-lg">
+        ▶ Watch on YouTube
+      </a>
+    </div>
+  </div>
+</section> -->
+<!-- Choir Songs Section -->
+<section id="choir" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">🎶 Choir Songs 🎵</h2>
+    <p class="mb-5">
+      Enjoy our choir performances and spiritual songs on our YouTube channel! 🙏✨
+    </p>
+
+    <!-- YouTube Video Embed -->
+    <div class="video-container mb-4">
+      <iframe 
+        src="https://www.youtube.com/embed/8tuaroS_cF8"
+        title="AIC Samutet Choir" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- YouTube Button -->
+    <a href="http://www.youtube.com/@maurinechepkemoi2792" target="_blank" class="btn btn-light btn-lg">
+      ▶ Visit Our YouTube Channel
+    </a>
+  </div>
+</section>
+
+
   <!-- Contact Section -->
 <section id="contact" class="py-5 bg-light">
   <div class="container">
     <h2 class="text-center fw-bold mb-4">Contact Us</h2>
     <p class="text-center mb-4">
-      Reach out to us or visit us in person at our church.
+      Reach out to us through the email section below or visit us in person at our church.
     </p>
     <div class="row justify-content-center">
       
@@ -153,15 +200,10 @@
         <div class="card mb-3 shadow-sm">
           <div class="card-body">
             <h5 class="card-title">Church Location</h5>
-            <p class="card-text">M5RH+PCX, Kaitui</p>
+            <p class="card-text">M5RH+PCX Samutet AIC Church<br>Samutet Sub-location<br>Sitotwet Location<br>Kapsoit Ward</p>
           </div>
         </div>
-        <!-- <div class="card mb-3 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Reviews</h5>
-            <p class="card-text">⭐ 5.0 (2 reviews)</p>
-          </div>
-        </div> -->
+        
         <div class="card mb-3 shadow-sm">
           <div class="card-body">
             <h5 class="card-title">Business Hours</h5>
