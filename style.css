@@ -49,33 +49,25 @@ a {
 /* ========================
    Hero Section
 ======================== */
-/* section#home {
-  background: url('samutet church.jpg') no-repeat center center;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  padding: 120px 20px;
-  position: relative;
-    min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 section#home {
-  background: url('samutet church.jpg') no-repeat center center;
-  background-size: cover;
+  background: url('images/istockphoto-1869242714-612x612.jpg') no-repeat center center;
+  background-size: contain; /* keep image fully visible, don’t stretch */
+  background-repeat: no-repeat;
+  background-position: center top; /* focus on top part of image */
   color: white;
   text-align: center;
-  min-height: 60vh; /* ensures hero takes part of screen but not too tall */
+  min-height: 60vh; /* height only for home section */
+  max-height: 600px; /* optional, prevent it from being too tall */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px; /* reduce excess padding */
+  padding: 40px 20px;
   position: relative;
-  z-index: 1; /* keep hero content above overlay */
+  z-index: 1;
 }
+
 
 section#home::after {
   content: "";
